@@ -1,0 +1,667 @@
+/* ===========================
+   PATRONAGE PAGE STYLES
+   =========================== */
+
+/* ===== HERO ===== */
+.pat-hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 120px 60px 80px;
+}
+
+.pat-hero-content {
+  max-width: 700px;
+}
+
+.pat-label {
+  display: none;
+}
+
+.pat-hero-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: clamp(48px, 7vw, 96px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.pat-hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* ===== SECTIONS (WME style) ===== */
+.pat-section {
+  padding: 120px 60px 100px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 80px;
+  align-items: start;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-wme-label {
+  font-family: 'Tektur', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray);
+  padding-top: 8px;
+}
+
+.pat-wme-content {
+  max-width: 800px;
+}
+
+.pat-wme-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--white);
+  margin-bottom: 48px;
+}
+
+/* ===== STEPS ===== */
+.pat-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.pat-step {
+  background: var(--black-2);
+  padding: 36px 28px;
+}
+
+.pat-step-num {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.pat-step-title {
+  font-family: 'Tektur', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.pat-step-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* ===== PACKAGE GROUPS ===== */
+.pat-group {
+  padding: 120px 60px 100px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-group-corp {
+  border-top: none;
+  padding-top: 80px;
+}
+
+.pat-group-header {
+  margin-bottom: 60px;
+}
+
+.pat-group-label {
+  font-family: 'Tektur', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+
+.pat-group-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.pat-group-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(15px, 1.3vw, 18px);
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* ===== PACKAGES GRID ===== */
+.pat-packages-grid {
+  display: grid;
+  gap: 2px;
+  align-items: stretch;
+}
+
+.pat-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pat-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pat-package {
+  background: var(--black-2);
+  padding: 48px 36px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid transparent;
+  transition: border-color 0.4s ease, background 0.4s ease, transform 0.4s ease;
+}
+
+.pat-package:hover {
+  border-color: var(--gold);
+  background: var(--black-3);
+  transform: translateY(-6px);
+}
+
+.pat-package:hover .pat-package-name {
+  color: var(--gold);
+}
+
+.pat-package:hover .pat-package-btn {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.pat-package-featured,
+.pat-package-exclusive {
+  background: var(--black-3);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+.pat-package-featured:hover,
+.pat-package-exclusive:hover {
+  border-color: var(--gold-light);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.pat-package-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: 'Tektur', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--black);
+  background: var(--gold);
+  padding: 4px 12px;
+}
+
+.pat-package-name {
+  font-family: 'Russo One', sans-serif;
+  font-size: 28px;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  transition: color 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Иконки пакетов */
+.pat-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.pat-icon-pulse {
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.pat-icon-float {
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+.pat-icon-glow {
+  animation: iconGlow 2.5s ease-in-out infinite;
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.85; }
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes iconGlow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(201, 168, 76, 0.3)); }
+  50% { filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.7)); }
+}
+
+.pat-package-price {
+  font-family: 'Russo One', sans-serif;
+  font-size: 42px;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.pat-package-price span {
+  font-family: 'Tektur', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.pat-package-term {
+  font-family: 'Tektur', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.pat-package-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-package-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+  flex-grow: 1;
+}
+
+.pat-package-list li {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray-light);
+  line-height: 1.5;
+  padding: 8px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.pat-package-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 6px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.pat-package-btn {
+  display: block;
+  text-align: center;
+  font-family: 'Tektur', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 14px 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pat-package-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.pat-btn-gold {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+}
+
+.pat-btn-gold:hover {
+  background: var(--gold-light);
+  color: var(--black);
+  border-color: var(--gold-light);
+}
+
+/* ===== JOURNEY TIMELINE ===== */
+.pat-journey {
+  padding: 120px 60px 100px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-journey-header {
+  margin-bottom: 60px;
+}
+
+.pat-journey-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.pat-journey-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 1.2vw, 17px);
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.journey-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  padding-top: 40px;
+}
+
+.journey-line {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg,
+    var(--gold-dim) 0%,
+    var(--gold) 30%,
+    var(--gold-light) 60%,
+    var(--gold) 100%
+  );
+  z-index: 0;
+}
+
+.journey-point {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 8px;
+}
+
+.journey-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--black);
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.journey-point:hover .journey-dot {
+  background: var(--gold);
+  box-shadow: 0 0 16px rgba(201, 168, 76, 0.5);
+}
+
+.dot-accent {
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(201, 168, 76, 0.4);
+}
+
+.dot-final {
+  border-color: var(--gold-light);
+  background: var(--gold-light);
+  box-shadow: 0 0 16px rgba(201, 168, 76, 0.5);
+}
+
+.journey-label {
+  font-family: 'Tektur', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.journey-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.journey-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.journey-patron {
+  font-family: 'Tektur', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+  background: var(--gold-dim);
+  padding: 8px 12px;
+  display: inline-block;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+/* ===== BREAKDOWN ===== */
+.pat-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pat-breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pat-breakdown-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+  border-radius: 2px;
+}
+
+.pat-breakdown-info {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.pat-breakdown-pct {
+  font-family: 'Russo One', sans-serif;
+  font-size: 32px;
+  color: var(--gold);
+  min-width: 80px;
+}
+
+.pat-breakdown-label {
+  font-family: 'Tektur', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pat-breakdown-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+/* ===== FAQ ===== */
+.pat-faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.pat-faq-item {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-faq-item:first-child {
+  padding-top: 0;
+}
+
+.pat-faq-q {
+  font-family: 'Tektur', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.pat-faq-a {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+/* ===== CTA ===== */
+.pat-cta {
+  padding: 120px 60px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.pat-cta-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 400;
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.pat-cta-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(15px, 1.3vw, 18px);
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto 40px;
+}
+
+.pat-cta-btn {
+  display: inline-block;
+  font-family: 'Tektur', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--black);
+  background: var(--gold);
+  padding: 16px 48px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pat-cta-btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .pat-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 40px 60px;
+  }
+
+  .pat-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .pat-group {
+    padding: 80px 40px 60px;
+  }
+
+  .pat-grid-3,
+  .pat-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pat-hero {
+    padding: 0 40px 60px;
+  }
+
+  .pat-cta {
+    padding: 80px 40px;
+  }
+
+  .pat-breakdown-info {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pat-hero {
+    padding: 0 24px 40px;
+    min-height: 50vh;
+  }
+
+  .pat-section {
+    padding: 60px 24px 40px;
+  }
+
+  .pat-group {
+    padding: 60px 24px 40px;
+  }
+
+  .pat-cta {
+    padding: 60px 24px;
+  }
+}
