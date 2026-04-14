@@ -181,6 +181,8 @@ nav.scrolled {
   align-items: flex-end;
   justify-content: flex-start;
   overflow: hidden;
+  padding-top: 140px; /* space for marquee + navbar */
+  box-sizing: border-box;
 }
 
 .hero-video {
@@ -211,12 +213,13 @@ nav.scrolled {
 
 .hero-tagline {
   font-family: 'Tektur', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.15em;
   color: var(--gold);
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  padding-top: 8px;
 }
 
 .hero-title-block {
